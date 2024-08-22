@@ -1,0 +1,348 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('./background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+.navbar {
+  background-color: #343a40;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: #495057;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  display: inline-block;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #007bff;
+  color: rgb(72, 59, 59);
+  border-radius: 4px;
+}
+
+.navbar-logo img {
+  height: 50px;
+  width: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background: rgba(196, 208, 205, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 2.8rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #007bff;
+  margin-top: 0;
+  font-size: 2.2rem;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.logo-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.logo-carousel .logo {
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+
+.logo-carousel .logo img.circular {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.logo-carousel .logo img.rectangular {
+  height: 80px;
+  width: 120px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.logo-carousel .logo:hover {
+  transform: scale(1.1);
+}
+
+.logo-carousel .caption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.verify-section, .contact-form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.verify-section input, .contact-form input, .contact-form textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #2c2222;
+  width: calc(100% - 24px);
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.verify-section input:focus, .contact-form input:focus, .contact-form textarea:focus {
+  border-color: #010407;
+  outline: none;
+}
+
+.verify-section button, .contact-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #201e64;
+  color: rgb(23, 17, 17);
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.verify-section button:hover, .contact-form button:hover {
+  background-color: #0c0c11;
+  transform: scale(1.05);
+}
+.footer {
+  background-color: #343a40;
+  color: rgb(23, 22, 22);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-navbar {
+  margin-bottom: 15px;
+}
+
+.footer-navbar a {
+  color: rgb(62, 49, 49);
+  text-decoration: none;
+  padding: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-navbar a:hover {
+  color: #101c2a;
+}
+
+.social-media {
+  margin: 15px 0;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  background-size: cover;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.facebook {
+  background-image: url('./facebook-icon.png');
+}
+
+.twitter {
+  background-image: url('./twitter-icon.png');
+}
+
+.linkedin {
+  background-image: url('./linkedin-icon.png');
+}
+
+.instagram {
+  background-image: url('./instagram-icon.png');
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+/* Existing styles */
+
+/* Social Media Icons in Internship Information Section */
+.social-media {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  background-size: cover;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.facebook {
+  background-image: url('./facebook-icon.png');
+}
+
+.twitter {
+  background-image: url('./twitter-icon.png');
+}
+
+.linkedin {
+  background-image: url('./linkedin-icon.png');
+}
+
+.instagram {
+  background-image: url('./instagram-icon.png');
+}
+
+/* Footer styles */
+.footer {
+  background-color: #343a40;
+  color: rgb(72, 104, 134);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-navbar {
+  margin-bottom: 15px;
+}
+
+.footer-navbar a {
+  color: rgb(21, 22, 26);
+  text-decoration: none;
+  padding: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-navbar a:hover {
+  color: #08090b;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+/* Existing styles */
+
+/* Work Projects Section */
+.work-projects {
+  margin-top: 20px;
+}
+
+.work-projects h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.work-projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.work-projects ul li {
+  margin-bottom: 10px;
+}
+
+.work-projects ul li a {
+  color: #3e4b5a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.work-projects ul li a:hover {
+  text-decoration: underline;
+}
+/* Verify Button */
+.verify-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #261818;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.verify-button:hover {
+  background-color: #091521;
+}
+

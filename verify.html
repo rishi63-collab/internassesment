@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify CIN</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function verifyCin() {
+            var cin = document.getElementById('verifyCin').value;
+            var validCin = 'CIN242419'; // Updated CIN for validation
+            
+            if (cin === validCin) {
+                // Redirect to index.html if CIN is valid
+                window.location.href = 'index.html';
+            } else {
+                document.getElementById('infoDisplay').innerText = 'Invalid CIN. Please try again.';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#internship">Internship</a>
+        <a href="#faq">FAQ</a>
+        <a href="verify.html">Verify</a>
+        <a href="#contact">Contact Us</a>
+        <div class="navbar-logo">
+            <img src="./Main Logo.png" alt="Logo 3" class="rectangular">
+        </div>
+    </div>
+
+    <div id="verify" class="section">
+        <div class="container">
+            <h2>Verify CIN</h2>
+            <div class="verify-section">
+                <input type="text" id="verifyCin" placeholder="Enter CIN number">
+                <button onclick="verifyCin()">Verify</button>
+                <div class="info-display" id="infoDisplay"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-navbar">
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#internship">Internship</a>
+                <a href="#faq">FAQ</a>
+                <a href="verify.html">Verify</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" class="social-icon facebook" aria-label="Facebook"></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon twitter" aria-label="Twitter"></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon linkedin" aria-label="LinkedIn"></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon instagram" aria-label="Instagram"></a>
+            </div>
+            <p class="footer-text">&copy; 2024 Internship Portal. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
